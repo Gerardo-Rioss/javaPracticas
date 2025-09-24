@@ -13,7 +13,9 @@ public class App {
 
         }
         while (!palabraAdivinada && intentos < intentosMaximos) {
-            System.out.println("Palabra adivinada: " + String.valueOf(letrasAdivinadas));
+            System.out.println(
+                    "Palabra adivinada: " + String.valueOf(letrasAdivinadas) + "(" + palabraSecreta.length()
+                            + " letras)");
             System.out.println("Introduce una letra, por favor");
             char letra = Character.toLowerCase(scanner.next().charAt(0));
 
